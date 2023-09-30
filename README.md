@@ -22,7 +22,9 @@ A Mojo programming environment is available from the Mojo product [page](https:/
 
 At the time of writing, Mojo is only available for [local installation](https://youtu.be/knGTSXe7ytI?si=mGdZzrcLsZeoR5Bs) on Ubuntu-based linux distros.
 
-In theory, you should be able to get it up and running inside a virtual machine inside a different host OS, but personally, I gave in and ended up using a bare metal Ubuntu install for the x86_64 architecture.
+In theory, you should be able to get it up and running inside a virtual machine on a different host OS, but personally, I gave in and ended up using a bare metal Ubuntu install for the x86_64 architecture.
+
+<br>
 
 <img src="x1-carbon.png" width="100%" height="auto" />
 
