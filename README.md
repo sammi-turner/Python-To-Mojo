@@ -1,5 +1,5 @@
 <br>
 
-# Python To Mojo Examples
+# Python To Mojo
 
 Small Python programs with their Mojo equivalents.
