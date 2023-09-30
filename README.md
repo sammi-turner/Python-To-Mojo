@@ -2,4 +2,4 @@
 
 # Python To Mojo
 
-Small Python programs with their Mojo equivalents.
+Python code snippets with their Mojo equivalents.
