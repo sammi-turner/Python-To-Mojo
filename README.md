@@ -1,3 +1,5 @@
-# Mojo Python Code Compared
+<br>
 
-Private repo.
+# Python To Mojo Examples
+
+Small Python programs with their Mojo equivalents.
