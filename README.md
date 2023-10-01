@@ -1,14 +1,8 @@
 <br>
 
-# Mojo To Python
+# Python To Mojo
 
 Python code snippets with their Mojo equivalents.
-
-<br>
-
-## Assumption
-
-I am going to assume that you are fairly familiar with Python3 and have it installed on your machine.
 
 <br>
 
