@@ -38,7 +38,7 @@ To save time building and running my Mojo code, I have added some aliases to my 
 # MOJO ALIASES
 alias mbr='mojo build app.mojo && ./app'
 alias mba='mojo build app.mojo'
-alias mra='./app.py'
+alias mra='./app'
 ```
 
 <br>
