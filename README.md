@@ -60,9 +60,10 @@ Once you have generated the code that you want in Python3, manually making the c
 I have had good results with prompts using the following template
 
 ```
-"Show me an implementation of a [name] function in Python3 that takes
-[name the parameters and their types] and returns a [type] such that
-[describe what the function does]."
+Write a [name] function in Python3 that takes
+[name the parameters and their types] and returns
+a [type] such that [describe what the function does].
+Then show me the code.
 ```
 
 <br>
