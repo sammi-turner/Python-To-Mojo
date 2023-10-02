@@ -20,5 +20,10 @@ fn main() raises:
         elif guess > target:
             print("Too high.")
         else:
-            print("\nCorrect! You got the number ", target, " in ", num_guesses, " guesses.\n")
+            # print("\nCorrect! You got the number ", target, " in ", num_guesses, " guesses.\n")
+            print_no_newline("\nCorrect! You got the number ")
+            print_no_newline(target)
+            print_no_newline(" in ")
+            print_no_newline(num_guesses)
+            print(" guesses.\n")
             break
