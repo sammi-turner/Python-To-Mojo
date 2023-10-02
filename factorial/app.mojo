@@ -5,4 +5,4 @@ fn factorial(n:IntLiteral) -> IntLiteral:
         return n * factorial(n - 1)
 
 fn main() raises:
-    print(factorial(0), " ", factorial(1), " ", factorial(2), " ", factorial(3))
+    print(factorial(0), factorial(1), factorial(2), factorial(3))
