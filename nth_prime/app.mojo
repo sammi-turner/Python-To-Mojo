@@ -19,4 +19,4 @@ fn nth_prime(n:Int) raises -> Int:
     return num
 
 fn main() raises:
-    print(nth_prime(10), " ", nth_prime(11))
+    print(nth_prime(10), nth_prime(11))
