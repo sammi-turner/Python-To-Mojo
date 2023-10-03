@@ -16,7 +16,7 @@ Examples :
 (4, 5) -> false
 """
 
-def hero(bullets:Int, dragons:Int) -> Bool:
+fn hero(bullets:Int, dragons:Int) -> Bool:
     return bullets >= (dragons * 2)
 
 fn main() raises:
