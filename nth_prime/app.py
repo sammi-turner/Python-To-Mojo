@@ -15,4 +15,4 @@ def nth_prime(n):
             count += 1
     return num
 
-print(f"{nth_prime(10)} {nth_prime(11)}")
+print(nth_prime(10), nth_prime(11))
