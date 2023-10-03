@@ -11,4 +11,4 @@ n =-5, m = 5:  0
 def paperwork(n, m):
     return n * m if n > 0 and m > 0 else 0
 
-print(f"{paperwork(-1, 6)} {paperwork(6, -1)} {paperwork(4, 4)}")
+print(paperwork(-1, 6), paperwork(6, -1), paperwork(4, 4))

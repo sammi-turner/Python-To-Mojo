@@ -19,4 +19,4 @@ Examples :
 def hero(bullets:int, dragons:int) -> bool:
     return bullets >= (dragons * 2)
 
-print(f"{hero(10, 5)} {hero(7, 4)} {hero(4, 5)}")
+print(hero(10, 5), hero(7, 4), hero(4, 5))

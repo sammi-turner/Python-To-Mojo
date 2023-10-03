@@ -20,4 +20,4 @@ def bmi(weight, height) -> str:
         return "Overweight"
     return "Obese"
 
-print(f"{bmi(66, 1.80)} {bmi(105, 1.62)}")
+print(bmi(66, 1.80), bmi(105, 1.62))

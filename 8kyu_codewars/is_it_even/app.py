@@ -13,4 +13,4 @@ Floats with decimal part non equal to zero are considered not even for this kata
 def is_even(n:int) -> bool: 
     return n % 2 == 0
 
-print(f"{is_even(0)} {is_even(0.5)} {is_even(2)} {is_even(3)} {is_even(-4)}")
+print(is_even(0), is_even(0.5), is_even(2), is_even(3), is_even(-4))

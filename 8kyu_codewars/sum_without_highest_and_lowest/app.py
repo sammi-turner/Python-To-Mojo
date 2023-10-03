@@ -21,4 +21,6 @@ def sum_array(arr):
     else:
         return 0
 
-print(f"{sum_array([6, 2, 1, 8, 10])} {sum_array([1, 1, 11, 2, 3])}")
+value0 = sum_array([6, 2, 1, 8, 10])
+value1 = sum_array([1, 1, 11, 2, 3])
+print(value0, value1)
