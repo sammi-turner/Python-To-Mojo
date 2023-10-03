@@ -13,8 +13,7 @@ def guess_number():
         elif guess > target:
             print("Too high.")
         else:
-            print(f"\nCorrect! You got the number {target} in {num_guesses} guesses.\n")
+            print("\nCorrect! You got the number", target, "in", num_guesses, "guesses.\n")
             break
 
 guess_number()
-
