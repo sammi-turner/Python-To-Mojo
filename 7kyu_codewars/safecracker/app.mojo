@@ -55,6 +55,20 @@ fn main():
     vec0.push_back(54)
     vec0.push_back(48)
     vec0.push_back(77)
-    let result = safecracker(96, vec0)
-    print(vec0[0], vec0[1], vec0[2])
+    let result0 = safecracker(96, vec0)
+    print(result0[0], result0[1], result0[2])
+
+    var vec1 = DynamicVector[Int](3)
+    vec1.push_back(92)
+    vec1.push_back(30)
+    vec1.push_back(84)
+    let result1 = safecracker(43, vec1)
+    print(result1[0], result1[1], result1[2])
+
+    var vec2 = DynamicVector[Int](3)
+    vec2.push_back(69)
+    vec2.push_back(88)
+    vec2.push_back(55)
+    let result2 = safecracker(4, vec2)
+    print(result2[0], result2[1], result2[2])
 
