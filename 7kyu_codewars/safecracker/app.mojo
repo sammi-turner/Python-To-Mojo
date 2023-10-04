@@ -41,29 +41,20 @@ Notes :
 - values greater than 100 may be provided
 """
 
-struct Triple:
-    var t0: Int
-    var t1: Int
-    var t2: Int
+from utils.vector import DynamicVector
 
-    fn __init__(inout self, t0: Int, t1: Int, t2: Int):
-        self.t0 = t0
-        self.t1 = t1
-        self.t2 = t2
-    
-fn show_triple(s:Triple):
-    print(s.t0, s.t1, s.t2)
+fn safecracker(start:Int, incs:DynamicVector[Int]) -> DynamicVector[Int]:
+    var vec = DynamicVector[Int](3)
+    vec.push_back((start - incs[0]) % 100)
+    vec.push_back((vec[0] + incs[1]) % 100)
+    vec.push_back((vec[1] - incs[2]) % 100)
+    return vec
 
-fn safecracker(start:Int, incs:Triple) -> Triple:
-    let r0 = (start - incs.t0) % 100
-    let r1 = (r0 + incs.t1) % 100
-    let r2 = (r1 - incs.t2) % 100
-    return Triple(r0, r1, r2)
+fn main():
+    var vec0 = DynamicVector[Int](3)
+    vec0.push_back(54)
+    vec0.push_back(48)
+    vec0.push_back(77)
+    let result = safecracker(96, vec0)
+    print(vec0[0], vec0[1], vec0[2])
 
-fn main() raises:
-    let test0 = safecracker(96, Triple(54, 48, 77))
-    let test1 = safecracker(43, Triple(51, 38, 46))
-    let test2 = safecracker(4, Triple(69, 88, 55))
-    show_triple(test0)
-    show_triple(test1)
-    show_triple(test2)
