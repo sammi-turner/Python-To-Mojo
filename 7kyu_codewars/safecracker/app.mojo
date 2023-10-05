@@ -41,29 +41,25 @@ Notes :
 - values greater than 100 may be provided
 """
 
-struct Triple:
-    var t0: Int
-    var t1: Int
-    var t2: Int
+from utils.static_tuple import StaticTuple
+alias Tuple3I = StaticTuple[3, Int]
 
-    fn __init__(inout self, t0: Int, t1: Int, t2: Int):
-        self.t0 = t0
-        self.t1 = t1
-        self.t2 = t2
+fn safecracker(start: Int, incs: Tuple3I) -> Tuple3I:
+    var r = Tuple3I()
+    r[0] = (start - incs[0]) % 100
+    r[1] = (r[0] + incs[1]) % 100
+    r[2] = (r[1] - incs[2]) % 100
+    return r
 
-fn show_triple(s:Triple):
-    print(s.t0, s.t1, s.t2)
+fn main():
+    let a_tuple = Tuple3I(54, 48, 77)
+    let a_test = safecracker(96, a_tuple)
+    print(a_test[0], a_test[1], a_test[2])
 
-fn safecracker(start:Int, incs:Triple) -> Triple:
-    let r0 = (start - incs.t0) % 100
-    let r1 = (r0 + incs.t1) % 100
-    let r2 = (r1 - incs.t2) % 100
-    return Triple(r0, r1, r2)
+    let b_tuple = Tuple3I(51, 38, 46)
+    let b_test = safecracker(43, b_tuple)
+    print(b_test[0], b_test[1], b_test[2])
 
-fn main() raises:
-    let test0 = safecracker(96, Triple(54, 48, 77))
-    let test1 = safecracker(43, Triple(51, 38, 46))
-    let test2 = safecracker(4, Triple(69, 88, 55))
-    show_triple(test0)
-    show_triple(test1)
-    show_triple(test2)
+    let c_tuple = Tuple3I(69, 88, 55)
+    let c_test = safecracker(4, c_tuple)
+    print(c_test[0], c_test[1], c_test[2])
