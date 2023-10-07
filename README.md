@@ -55,9 +55,20 @@ Once you have generated the code that you want in Python3, manually making the c
 
 <br>
 
+## Learning Python with LLMs
+
+This prompt template is good for learning Python idioms.
+
+```
+What is the idiomatic way to [the thing you want to do]
+in Python3?
+```
+
+<br>
+
 ## Function Generation With LLMs
 
-I have had good results with prompts using the following template
+This prompt template is good for generating Python functions.
 
 ```
 Write a [name] function in Python3 that takes
@@ -65,5 +76,4 @@ Write a [name] function in Python3 that takes
 a [type] such that [describe what the function does].
 Then show me the code.
 ```
-
 <br>
