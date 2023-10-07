@@ -60,7 +60,7 @@ Once you have generated the code that you want in Python3, manually making the c
 This prompt template is good for learning Python idioms.
 
 ```
-What is the idiomatic way to [the thing you want to do]
+What is the idiomatic way to [do the thing you want to do]
 in Python3?
 ```
 
