@@ -1,5 +1,5 @@
 """
-Write a class Sphere that creates sphere objects.
+Write a struct Sphere that creates sphere objects.
 
 Arguments for the constructor :
 
@@ -40,24 +40,24 @@ struct Sphere:
         self.volume = 4*math.pi * self.radius**3 / 3
         self.surface = 4*math.pi* self.radius**2
 
-fn get_radius(s:Sphere) -> FloatLiteral:
-    return s.radius
+    fn get_radius(self) -> FloatLiteral:
+        return self.radius
 
-fn get_mass(s:Sphere) -> FloatLiteral:
-    return s.mass
+    fn get_mass(self) -> FloatLiteral:
+        return self.mass
 
-fn get_volume(s:Sphere) raises -> PythonObject:
-    let py = Python.import_module('builtins')
-    return py.round(s.volume, 5)
+    fn get_volume(self) raises -> PythonObject:
+        let py = Python.import_module('builtins')
+        return py.round(self.volume, 5)
 
-fn get_surface_area(s:Sphere) raises -> PythonObject:
-    let py = Python.import_module('builtins')
-    return py.round(s.surface, 5)
+    fn get_surface_area(self) raises -> PythonObject:
+        let py = Python.import_module('builtins')
+        return py.round(self.surface, 5)
 
-fn get_density(s:Sphere) raises -> PythonObject:
-    let py = Python.import_module('builtins')
-    return py.round(s.surface/s.volume, 5)
+    fn get_density(self) raises -> PythonObject:
+        let py = Python.import_module('builtins')
+        return py.round(self.surface/self.volume, 5)
 
 fn main() raises:    
     let s = Sphere(2, 50)
-    print(get_radius(s), get_mass(s), get_volume(s), get_surface_area(s), get_density(s))
+    print(s.get_radius(), s.get_mass(), s.get_volume(), s.get_surface_area(), s.get_density())
