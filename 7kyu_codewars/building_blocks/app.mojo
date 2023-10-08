@@ -1,5 +1,5 @@
 """
-Write a Block class that creates block objects.
+Write a Block struct that creates block objects.
 
 Requirements :
 
