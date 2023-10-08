@@ -43,24 +43,24 @@ struct Block:
         self.length = length
         self.height = height
 
-fn get_width(b:Block) -> Int:
-    return b.width
+    fn get_width(self) -> Int:
+        return self.width
 
-fn get_length(b:Block) -> Int:
-    return b.length
+    fn get_length(self) -> Int:
+        return self.length
 
-fn get_height(b:Block) -> Int:
-    return b.height
+    fn get_height(self) -> Int:
+        return self.height
 
-fn get_volume(b:Block) -> Int:
-    return b.width * b.length * b.height
+    fn get_volume(self) -> Int:
+        return self.width * self.length * self.height
 
-fn get_surface_area(b:Block) -> Int:
-    let wl = b.width * b.length * 2
-    let wh = b.width * b.height * 2
-    let lh = b.length * b.height * 2
-    return wl + wh + lh
+    fn get_surface_area(self) -> Int:
+        let wl = self.width * self.length * 2
+        let wh = self.width * self.height * 2
+        let lh = self.length * self.height * 2
+        return wl + wh + lh
 
 fn main():    
     let x = Block(2,4,6)
-    print(get_width(x), get_length(x), get_height(x), get_volume(x), get_surface_area(x))
+    print(x.get_width(), x.get_length(), x.get_height(), x.get_volume(), x.get_surface_area())
