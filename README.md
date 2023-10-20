@@ -14,7 +14,27 @@ A Mojo programming environment is available from the Mojo product [page](https:/
 
 ## Local installation
 
-At the time of writing, Mojo is available for Ubuntu-based linux distros, MacOS and WSL2 on Windows.
+At the time of writing, Mojo is available for Ubuntu-based linux distros, MacOS (M1 and M2) and WSL2 on Windows.
+
+<br>
+
+## Environment variables
+
+These are at the end of my .bashrc file on Ubuntu.
+
+```
+export MODULAR_HOME="/home/user/.modular"
+export PATH="/home/user/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export MOJO_PYTHON_LIBRARY="/usr/lib/x86_64-linux-gnu/libpython3.10.so"
+```
+
+These are at the end of my .zshrc file on my M2 Mac.
+
+```
+export MODULAR_HOME="/Users/sammiturner/.modular"
+export PATH="/Users/sammiturner/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export MOJO_PYTHON_LIBRARY="/opt/homebrew/bin/python3"
+```
 
 <br>
 
@@ -70,4 +90,5 @@ Write a [name] function in Python3 that takes
 a [type] such that [describe what the function does].
 Then show me the code.
 ```
+
 <br>
